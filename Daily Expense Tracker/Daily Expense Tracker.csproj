@@ -64,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComboItem.cs" />
     <Compile Include="Db.cs" />
     <Compile Include="frmAddExpense.cs">
       <SubType>Form</SubType>
@@ -98,11 +99,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
+    <EmbeddedResource Include="frmAddExpense.resx">
+      <DependentUpon>frmAddExpense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddIncome.resx">
+      <DependentUpon>frmAddIncome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDashboard.resx">
       <DependentUpon>frmDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmManageCategories.resx">
+      <DependentUpon>frmManageCategories.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
